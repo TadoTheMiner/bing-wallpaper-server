@@ -1,0 +1,12 @@
+[package]
+name = "bing-wallpaper-server"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+actix-web = "4.5.1"
+dirs = "5.0.1"
+isahc = "1.7.2"
+serde_json = "1.0.115"
