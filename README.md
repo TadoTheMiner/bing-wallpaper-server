@@ -1,5 +1,5 @@
 This simple program runs a server that provides Bing images of the day at a single URL, so you can use it as wallpaper (I use it in the NightTab Firefox extension).
-You can specify the port where it gets ran (default is 8080) as an argument
+You can specify the port where it gets ran (default is 8080) as an argument, and the path to image cache.
 # Instalation
 1. Run ```cargo install --git https://github.com/TadoTheMiner/bing-wallpaper-server/```
 ## Nixos 
