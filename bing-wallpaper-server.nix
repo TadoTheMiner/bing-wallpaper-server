@@ -3,11 +3,11 @@
   lib,
   ...
 }:
-pkgs.rustPlatform.buildRustPackage rec {
+pkgs.rustPlatform.buildRustPackage {
   name = "bing-wallpaper-server";
-  src = lib.cleanSource "./";
+  src = lib.cleanSource ./.;
   doCheck = false;
-  cargoLock.lockFile = "${src}/Cargo.lock";
+  cargoLock.lockFile = ./Cargo.lock;
   nativeBuildInputs = [pkgs.pkg-config];
   buildInputs = [pkgs.openssl];
 }
