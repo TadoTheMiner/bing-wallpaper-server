@@ -4,7 +4,7 @@
   ...
 }:
 pkgs.rustPlatform.buildRustPackage {
-  pname = "bing-wallpaper-server";
+  name = "bing-wallpaper-server";
   src = lib.cleanSource "./";
   doCheck = false;
   cargoLock.lockFile = "./Cargo.lock";

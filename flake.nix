@@ -17,7 +17,7 @@
       pkgs = nixpkgs.outputs.legacyPackages.${system};
     in {
       packages = {
-        bing-wallpaper-server = pkgs.callPackage ./bing-wallpaper-server.nix;
+        bing-wallpaper-server = pkgs.callPackage ./bing-wallpaper-server.nix {};
 
         default = self.outputs.packages.${system}.bing-wallpaper-server;
       };
