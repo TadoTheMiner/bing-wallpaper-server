@@ -1,13 +1,15 @@
 [package]
 name = "bing-wallpaper-server"
 version = "0.2.0"
-edition = "2021"
+edition = "2024"
 description = "Get the daily bing wallpaper at a single url"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
 actix-web = "4.5.1"
 clap = { version = "4.5.4", features = ["cargo"] }
+color-eyre = "0.6.3"
 dirs = "5.0.1"
 isahc = "1.7.2"
 serde_json = "1.0.115"
+tap = "1.0.1"
